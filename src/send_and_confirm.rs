@@ -125,7 +125,7 @@ impl Miner {
                     // sigs.push(sig);
 
                     // Confirm tx
-                    skip_confir=true;
+                    skip_confirm=true;
                     if skip_confirm {
                         return Ok(sig);
                     }
