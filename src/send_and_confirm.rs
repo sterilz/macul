@@ -14,7 +14,7 @@ use solana_sdk::{
     signature::{Signature, Signer},
     transaction::Transaction,
 };
-use solana_transaction_status::{TransactionConfirmationStatus, UiTransactionEncoding};
+use solana_transaction_status::{UiTransactionEncoding};
 
 use crate::Miner;
 
@@ -125,7 +125,6 @@ impl Miner {
                     // sigs.push(sig);
 
                     // Confirm tx
-                    skip_confirm=true;
                     if skip_confirm {
                         return Ok(sig);
                     }
